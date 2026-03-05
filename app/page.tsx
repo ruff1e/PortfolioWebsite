@@ -152,10 +152,6 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="max-w-4xl mx-auto px-6 py-12 flex justify-between items-center text-[10px] font-mono text-gray-600 uppercase tracking-[0.2em] border-t border-white/5">
-        <div>{"> emre.kadirhan"}</div>
-        <div>Built with Next.Js</div>
-      </footer>
     </div>
   );
 }
