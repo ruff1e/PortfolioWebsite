@@ -72,7 +72,7 @@ export default function Home() {
             <div className="max-w-2xl space-y-4 text-gray-400 leading-relaxed text-lg font-light">
               <p>
                 I am currently a Junior at Arizona State University studying Computer Science. 
-                My main focus is to learn by developing and self-hosting projects that solves real-world problems.
+                My main focus is to learn by developing and self-hosting projects that solve real-world problems.
               </p>
             </div>
           </div>
