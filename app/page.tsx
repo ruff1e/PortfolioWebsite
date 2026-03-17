@@ -5,8 +5,8 @@ import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
 const SKILLS = {
   Languages: ["Python", "Java", "JavaScript", "TypeScript", "C", "C++"],
-  Frameworks: ["Next.js", "React", "Django", "Spring Boot"],
-  "Databases & Tools": ["PostgreSQL", "MySQL", "Redis", "Prisma", "Docker"],
+  Frameworks: ["Next.js", "React", "FastAPI", "Django", "Spring Boot"],
+  "Databases & Tools": ["PostgreSQL", "SQLAlchemy", "MySQL", "Redis", "Celery", "Prisma", "Docker", "PyTest", "JUnit"],
   "Cloud & DevOps": ["AWS", "CI/CD", "Linux/Unix", "Git/GitHub"],
 };
 
@@ -86,9 +86,9 @@ export default function Home() {
               date="June 2024 – Aug 2024"
               location="Istanbul, Turkey"
               points={[
-                "Optimized backend queries and refactored core service paths to improve scalability.",
-                "Redesigned customer management module to a modular architecture, reducing tech debt.",
-                "Contributed to code reviews, improving overall team delivery speed and code quality.",
+                "• Developed and maintained RESTful APIs using Spring Boot for a customer queue management system that served as the primary API layer for core product",
+                "• Refactored the customer management module into a more service-oriented architecture, reducing technical debt",
+                "• Wrote unit and integration tests using JUnit and Mockito, increasing test coverage on the customer service module from near zero to roughly 70%",
               ]}
             />
           </div>
@@ -102,15 +102,16 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ProjectItem
+              title="Bot Battle Arena"
+              tags={["Python/FastAPI", "Celery/Redis", "PostgreSQL", "Docker"]}
+              github="https://github.com/ruff1e/BotArena"
+              points={["• Real-time battle via WebSokets.", "• Celery/Redis based async queue.", "• PostgreSQL schema design.", "• Fully isolated dockerized environment"]}
+            />
+            <ProjectItem
               title="SwingVision - AI Golf Analyzer"
               tags={["Next.js", "Python", "MediaPipe"]}
               github="https://github.com/ruff1e/Golf-Swing-Analysis"
-              points={["Real-time AI pose skeletons.", "Redis-based async queue.", "PostgreSQL schema design."]}
-            />
-            <ProjectItem
-              title="E-Commerce Auction"
-              tags={["Django", "Stripe API", "SQLite"]}
-              points={["Real-time bid validation.", "Secure payment processing.", "Category filtering."]}
+              points={["• Real-time AI pose skeletons.", "• Redis-based async queue.", "• PostgreSQL schema design."]}
             />
           </div>
         </section>
