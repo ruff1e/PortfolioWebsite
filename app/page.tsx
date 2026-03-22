@@ -4,10 +4,10 @@ import Link from "next/link";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
 
 const SKILLS = {
-  Languages: ["Python", "Java", "JavaScript", "TypeScript", "C", "C++"],
-  Frameworks: ["Next.js", "React", "FastAPI", "Django", "Spring Boot"],
+  Languages: ["Python", "Java", "JavaScript", "TypeScript", "C++"],
+  Frameworks: ["FastAPI", "Django", "Spring Boot", "Spring", "Next.js", "React"],
   "Databases & Tools": ["PostgreSQL", "SQLAlchemy", "MySQL", "Redis", "Celery", "Prisma", "Docker", "PyTest", "JUnit"],
-  "Cloud & DevOps": ["AWS", "CI/CD", "Linux/Unix", "Git/GitHub"],
+  "Cloud & DevOps": ["Linux/Unix", "Git/GitHub", "CI/CD"],
 };
 
 const ACCENT = "#10b981";
@@ -72,7 +72,7 @@ export default function Home() {
             <div className="max-w-2xl space-y-4 text-gray-400 leading-relaxed text-lg font-light">
               <p>
                 I am currently a Junior at Arizona State University studying Computer Science. 
-                My main focus is to learn by developing and self-hosting projects that solve real-world problems.
+                My main focus is to learn backend development by building and self-hosting projects.
               </p>
             </div>
           </div>
@@ -84,7 +84,6 @@ export default function Home() {
               company="TQueue Software"
               role="Software Engineer Intern"
               date="June 2024 – Aug 2024"
-              location="Istanbul, Turkey"
               points={[
                 "• Developed and maintained RESTful APIs using Spring Boot for a customer queue management system that served as the primary API layer for core product",
                 "• Refactored the customer management module into a more service-oriented architecture, reducing technical debt",
@@ -112,6 +111,12 @@ export default function Home() {
               tags={["Next.js", "Python", "MediaPipe"]}
               github="https://github.com/ruff1e/Golf-Swing-Analysis"
               points={["• Real-time AI pose skeletons.", "• Redis-based async queue.", "• PostgreSQL schema design."]}
+            />
+            <ProjectItem
+              title="Rate Limiter Library"
+              tags={["Python", "FastAPI", "Django", "Redis"]}
+              github="https://github.com/ruff1e/RateLimiterLibrary"
+              points={["• Rate limiting library for FastAPI and Django with three configurable algorithms", "• Flexible API supporting both route-level decorators and global middleware."]}
             />
           </div>
         </section>
