@@ -101,6 +101,13 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ProjectItem
+              title="Feature Flag A/B"
+              tags={["Java/Spring Boot", "Redis", "PostgreSQL", "Docker"]}
+              github="https://github.com/ruff1e/FeatureFlag"
+              points={["• Flag evaluation engine supporting different targeting rules with priority-ordered evaluation", "• Consistent hash-based variant assignment",
+                "• Redis caching layer keyed by flag and user ID with a 5-minute TTL", "• JWT authentication via Spring Security filter chain"]}
+            />
+            <ProjectItem
               title="Bot Battle Arena"
               tags={["Python/FastAPI", "Celery/Redis", "PostgreSQL", "Docker"]}
               github="https://github.com/ruff1e/BotArena"
