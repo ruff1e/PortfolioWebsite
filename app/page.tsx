@@ -116,7 +116,7 @@ export default function Home() {
 
               <div className="flex items-center justify-center md:justify-start gap-6">
                 <Link
-                  href="/ResumeEmreKadirhan.pdf"
+                  href="/EmreKadirhanResume.pdf"
                   target="_blank"
                   className="bg-[#00d4b1] px-5 py-2.5 rounded text-sm font-bold text-black hover:opacity-90 transition shadow-lg shadow-[#00d4b1]/10 flex items-center gap-2"
                 >
@@ -131,7 +131,7 @@ export default function Home() {
                     <Github size={22} />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/in/emre-kadirhan-b68142228/"
+                    href="https://www.linkedin.com/in/emrekadirhan/"
                     target="_blank"
                     className="hover:text-[#00d4b1] transition"
                   >
@@ -199,9 +199,8 @@ export default function Home() {
               role="Software Engineer Intern"
               date="June 2024 – Aug 2024"
               points={[
-                "Developed and maintained RESTful APIs using Spring Boot for a customer queue management system that served as the primary API layer for core product",
-                "Refactored the customer management module into a more service-oriented architecture, reducing technical debt",
-                "Wrote unit and integration tests using JUnit and Mockito, increasing test coverage on the customer service module from near zero to roughly 70%",
+                "Built the initial implementation of 7 RESTful API endpoints in Spring Boot for registration, authentication, profile, booking history, and owner messaging for an early-stage booking/work-order platform serving several local small businesses",
+                "Wrote unit and integration tests using JUnit, increasing test coverage on the customer service module from near zero to roughly 70%",
               ]}
             />
           </div>
