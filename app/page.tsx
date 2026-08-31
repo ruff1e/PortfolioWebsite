@@ -303,7 +303,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2">
             <PulseDot />
             <p className="text-[#00d4b1] font-mono text-xs tracking-widest uppercase">
-              Online · Responds within 24h
+              ONLINE · I USUALLY RESPOND WITHIN 24 HOURS
             </p>
           </div>
           <h2 className="text-5xl font-bold text-white tracking-tight">

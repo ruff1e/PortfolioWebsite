@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="antialiased bg-[#070b14]">
+      <body className="antialiased bg-[#070b14]" suppressHydrationWarning>
         <div className="bg-grid" />
         <div className="relative z-10">{children}</div>
         <Analytics />
